@@ -22,6 +22,7 @@ module.exports = {
         name: "fullpage"
       }
     },
+    `gatsby-plugin-netlify-cache`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
