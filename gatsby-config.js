@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "Portfolio v3",
-    description: "Personal WebSite",
-    author: "@amanhimself",
-    siteUrl: `http://www.amanhimself.me`
+    title: "Tennis planning",
+    description: "Planning project tennis software",
+    author: "Norwin Dijkman",
+    siteUrl: `http://tennis-planning.netlify.app`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

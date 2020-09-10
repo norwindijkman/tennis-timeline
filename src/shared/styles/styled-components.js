@@ -41,6 +41,7 @@ export const RightSideHome = styled(RightSide)`
 
 export const Section = styled.section`
   margin-bottom: 80px;
+  overflow-wrap: anywhere;
 `;
 
 export const SectionTitle = styled.h3`
