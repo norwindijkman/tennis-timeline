@@ -7,7 +7,7 @@ const Header = ({ back }) => (
     <div className={styles.headerMaxWidthContainer}>
       {back ?
         <Link to="/"><button className={styles.headerButton}>&lt; TERUG</button></Link> : (
-        <Link to="/why"><button className={styles.headerButton}>Meer weten?</button></Link>
+        <Link to="/why"><button className={styles.headerButton}>Over Slam</button></Link>
       )}
       <h2 className={styles.headerH1}>
         Slam Software
