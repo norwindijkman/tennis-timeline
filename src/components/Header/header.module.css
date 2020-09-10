@@ -3,10 +3,10 @@
   max-width: 960;
   width: 100%;
   margin: auto;
-  position: absolute;
   top: 0;
   box-shadow: rgba(0, 0, 0, 0.133) 0px 0.223rem 0.368rem;
-  position: absolute;
+  position: fixed;
+  transform: translate3d(0,0,0);
   z-index: 101;
 }
 
