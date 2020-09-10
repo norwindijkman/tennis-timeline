@@ -15,7 +15,7 @@ import Layout from "../layouts";
 const IndexPage = ({ data }) => {
   const { edges } = data.allMarkdownRemark
   return (
-    <Layout>
+    <Layout footer>
     <div>
       <Sides>
         <LeftSide>
@@ -40,7 +40,7 @@ export default IndexPage;
 
 export const pageQuery = graphql`
   query {
-    allMarkdownRemark(sort: {fields: frontmatter___date}) {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/^((?!fullpage).)*$/"}}, sort: {fields: frontmatter___date}) {
       edges {
         node {
           id

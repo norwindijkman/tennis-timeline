@@ -1,12 +1,13 @@
 .headerContainer {
   background-color: #CB4B16;
-  height: 50px;
   max-width: 960;
   width: 100%;
   margin: auto;
   position: absolute;
   top: 0;
   box-shadow: rgba(0, 0, 0, 0.133) 0px 0.223rem 0.368rem;
+  position: absolute;
+  z-index: 101;
 }
 
 .headerMaxWidthContainer {
@@ -15,6 +16,31 @@
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
+}
+
+.headerButton {
+  background-color: #5cad9b;
+  background: #5cad9b;
+  color: #000;
+  transition: padding 0.092s ease-in-out;
+  border-radius: .368rem;
+  display: inline-block;
+  font-size: 1rem;
+  padding: .368rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 0.223rem 0.368rem rgba(0,0,0,.368);
+  position: relative;
+  height: 77.9%;
+  top: 11.05%;
+  border: none;
+}
+
+.headerButton:hover {
+  transform: scale(1.064);
 }
 
 h2 a {

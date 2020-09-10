@@ -8,7 +8,7 @@ import Footer from "../components/Footer/";
 import Image from "../assets/jj.jpg"
 import "./index.css";
 
-const TemplateWrapper = ({ children }) => (
+const TemplateWrapper = ({ children, footer, back }) => (
   <div>
     <Helmet>
       <title>{seo.TITLE}</title>
@@ -33,18 +33,18 @@ const TemplateWrapper = ({ children }) => (
       <meta name="twitter:description" content={seo.DESCRIPTION} />
       <meta name="twitter:image" content={Image} />
     </Helmet>
-    <Header />
+    <Header back={back} />
     <div
       style={{
         margin: "0 auto",
         maxWidth: 960,
         padding: "0px 1.0875rem 1.45rem",
-        paddingTop: 0
+        paddingTop: 0,
       }}
     >
       {children}
     </div>
-    <Footer />
+    {footer ? <Footer /> : ''}
   </div>
 );
 

@@ -15,7 +15,17 @@ module.exports = {
         path: `${__dirname}/content`,
       },
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/fullpage/`,
+        name: "fullpage"
+      }
+    },
     `gatsby-transformer-remark`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-styled-jsx`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
