@@ -9,6 +9,7 @@ import Image from "../assets/jj.jpg"
 import "./index.css";
 
 const TemplateWrapper = ({ children, footer, back }) => (
+  <>
   <div>
     <Helmet>
       <title>{seo.TITLE}</title>
@@ -41,11 +42,28 @@ const TemplateWrapper = ({ children, footer, back }) => (
         padding: "0px 1.0875rem 1.45rem",
         paddingTop: 0,
       }}
+      className="content"
     >
       {children}
     </div>
     {footer ? <Footer /> : ''}
   </div>
+  <style jsx>{`
+    .content {
+      animation-name: bodytextEntry;
+      animation-duration: .184s;
+    }
+
+    @keyframes bodytextEntry {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+  `}</style>
+  </>
 );
 
 TemplateWrapper.propTypes = {
