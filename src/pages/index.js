@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "gatsby-link";
+import { graphql } from "gatsby"
 
 import {
   Sides,
@@ -8,37 +9,47 @@ import {
 } from "../shared/styles/styled-components";
 
 import Info from "../components/Info";
-import Who from "../components/Who";
-import What from "../components/What";
-import DevStack from "../components/DevStack";
-import Technologies from "../components/Technologies";
-import Projects from "../components/Projects";
-import SideProjects from "../components/SideProjects";
-import Blogs from "../components/Blogs";
-import OpenSourceCommits from "../components/OpenSourceCommits";
-import Libraries from "../components/Libraries";
-import Interesting from "../components/Interesting";
+import TimelineItem from "../components/TimelineItem";
+import Layout from "../layouts";
 
-const IndexPage = () => (
-  <div>
-    <Sides>
-      <LeftSide>
-        <Info />
-      </LeftSide>
-      <RightSideHome>
-        <Who />
-        <What />
-        <DevStack />
-        <Technologies />
-        <Projects />
-        <OpenSourceCommits />
-        <SideProjects />
-        <Blogs />
-        <Libraries />
-        <Interesting />
-      </RightSideHome>
-    </Sides>
-  </div>
-);
+const IndexPage = ({ data }) => {
+  const { edges } = data.allMarkdownRemark
+  return (
+    <Layout>
+    <div>
+      <Sides>
+        <LeftSide>
+          <Info />
+        </LeftSide>
+        <RightSideHome>
+          {edges.length ? edges.map(edge => (
+            <TimelineItem
+              key={`node-${edge.node.id}`}
+              date={edge.node.frontmatter.date}
+              content={edge.node.html}
+            />
+          )):null}
+        </RightSideHome>
+      </Sides>
+    </div>
+    </Layout>
+  )
+}
 
 export default IndexPage;
+
+export const pageQuery = graphql`
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          id
+          html
+          frontmatter {
+            date
+          }
+        }
+      }
+    }
+  }
+`

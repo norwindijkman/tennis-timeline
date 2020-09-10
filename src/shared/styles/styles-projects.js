@@ -32,7 +32,7 @@ export const Title = styled.div`
     position: absolute;
     left: -90px;
     top: 0px;
-    border: 5px solid #69359c;
+    border: 5px solid #CB4B16;
 
     ${media.phoneM`
         left: -45px;
@@ -61,7 +61,7 @@ export const Point = styled.p`
     position: absolute;
     left: -85px;
     top: 4px;
-    border: 4px solid #69359c;
+    border: 4px solid #CB4B16;
     ${media.phoneM`
         left: -40px;
     `};

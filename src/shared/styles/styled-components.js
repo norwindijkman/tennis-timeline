@@ -21,24 +21,6 @@ export const LeftSide = styled.div`
   width: auto;
   min-width: 300px;
   min-height: calc(100vh - ${sizes.header.height}px);
-
-  ${media.tablet`
-        min-width: 0;
-        width: 100%;
-        margin-bottom: -350px;
-    `} ${mobileHome`
-      ${flex.vertical};
-      ${flex.centerVertical};
-    `};
-  ${media.phablet`
-    margin-bottom: -300px;
-  `};
-  ${media.phoneM`
-    margin-bottom: -350px;
-  `};
-  ${media.phone`
-    margin-bottom: -150px;
-  `};
 `;
 
 const RightSide = styled.div`
@@ -46,8 +28,8 @@ const RightSide = styled.div`
 `;
 
 export const RightSideHome = styled(RightSide)`
-  color: white;
-  border-left: 5px solid rgba(255, 255, 255, 0.5);
+  color: #000;
+  border-left: 5px solid rgba(0, 0, 0, 0.5);
   padding-left: 70px;
   margin-left: 20px;
   position: relative;
@@ -65,7 +47,7 @@ export const SectionTitle = styled.h3`
   font-size: 35px;
   font-weight: 100;
   margin: 0 0 10px 0;
-  color: white;
+  color: #000;
   font-weight: 300;
   padding-bottom: 5px;
   position: relative;
@@ -74,12 +56,12 @@ export const SectionTitle = styled.h3`
     width: 25px;
     height: 25px;
     border-radius: 100%;
-    color: white;
-    background-color: white;
+    color: #000;
+    background-color: #fff;
     position: absolute;
     left: -90px;
     top: 7px;
-    border: 5px solid #69359c;
+    border: 5px solid #CB4B16;
 
     ${media.phoneM`
         left: -45px;
@@ -107,12 +89,12 @@ export const UnorderedList = styled.ul`
 `;
 
 export const UnderlinedLink = styled.a`
-  color: white;
+  color: #000;
   text-decoration: none;
   ${props =>
     props.href &&
     `
-      border-bottom: 1px dashed rgba(255, 255, 255, 0.7);
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.7);
     `} padding-bottom: 1px;
   &:hover {
     color: #bd93d8;
@@ -120,19 +102,19 @@ export const UnderlinedLink = styled.a`
 `;
 
 export const ShowMoreButton = styled.button`
-  background-color: rgba(255, 255, 255, 0.16);
+  background-color: rgba(0, 0, 0, 0.16);
   transition: all 200ms linear;
   border: 0;
   cursor: pointer;
   border-radius: 3px;
-  color: white;
+  color: #000;
   font-weight: 100;
   padding: 10px 15px;
   font-size: 15px;
-  border: 1px solid rgba(255, 255, 255, 0.69);
+  border: 1px solid rgba(0, 0, 0, 0.69);
   margin-top: 5px;
 
   &:hover {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(0, 0, 0, 0.3);
   }
 `;

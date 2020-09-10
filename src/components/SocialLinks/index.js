@@ -1,5 +1,7 @@
 import React from "react";
-import { FaMedium, FaEnvelope, FaTwitter, FaGithub } from "react-icons/lib/fa";
+import JJ from "../../assets/jj-white.png"
+import Plathena from "../../assets/plathena.png"
+import Inspire from "../../assets/inspire.png"
 
 import styles from "./socialLinksStyles.module.css";
 
@@ -8,23 +10,18 @@ const SocialLinks = () => {
     <div className={styles.socialLinks}>
       <ul>
         <li>
-          <a href="mailto:amanmittal.work@gmail.com">
-            <FaEnvelope />
+          <a href="https://juniorjoy.nl">
+            <img src={JJ} alt="junior-joy" />
           </a>
         </li>
         <li>
-          <a href="https://github.com/amandeepmittal">
-            <FaGithub />
+          <a href="https://plathena.com">
+            <img src={Plathena} alt="plathena" />
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/amanhimself">
-            <FaTwitter />
-          </a>
-        </li>
-        <li>
-          <a href="https://medium.com/@amanhimself">
-            <FaMedium />
+          <a href="https://www.inspiretennisopleiding.nl/">
+            <img src={Inspire} alt="inspire" />
           </a>
         </li>
       </ul>

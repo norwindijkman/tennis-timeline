@@ -1,12 +1,10 @@
 const seo = {
-  TITLE: "Aman Mittal Portfolio",
-  AUTHOR: "Aman Mittal",
-  DESCRIPTION: "Portfolio Website",
+  TITLE: "Tennis Timeline",
+  AUTHOR: "Norwin Dijkman",
+  DESCRIPTION: "Planning tennis software",
   TYPE: "WEBSITE",
-  TWITTER_USERNAME: "@amanhimself",
-  URL: "www.amanhimself.me",
+  URL: "tennis-planning.netlify.app",
   IMAGE_URL: "https://i.imgur.com/TLvcVR4.jpg",
-  DESCRIPTION: "Aman Mittal Portfolio"
 };
 
 export default seo;

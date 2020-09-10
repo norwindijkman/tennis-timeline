@@ -2,6 +2,15 @@
   color: white;
 }
 
+.socialLinks img {
+  width: 2.718rem;
+  height: 2.718rem;
+}
+
+.socialLinks img:hover {
+  filter: brightness(.607);
+}
+
 .socialLinks a:hover {
   color: #bd93d8;
 }

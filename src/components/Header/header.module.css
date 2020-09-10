@@ -1,11 +1,12 @@
 .headerContainer {
-  background-color: #69359c;
+  background-color: #CB4B16;
   height: 50px;
   max-width: 960;
   width: 100%;
   margin: auto;
   position: absolute;
   top: 0;
+  box-shadow: rgba(0, 0, 0, 0.133) 0px 0.223rem 0.368rem;
 }
 
 .headerMaxWidthContainer {
@@ -22,7 +23,7 @@ h2 a {
 }
 
 h2 a:hover {
-  color: #bd93d8;
+  color: #fff;
 }
 
 .headerH1 {
