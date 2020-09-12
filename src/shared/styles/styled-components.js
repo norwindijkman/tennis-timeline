@@ -19,19 +19,18 @@ export const Sides = styled.div`
 
 export const LeftSide = styled.div`
   width: auto;
-  min-width: 300px;
   min-height: calc(100vh - ${sizes.header.height}px);
 `;
 
 const RightSide = styled.div`
-  padding-bottom: 50px;
+  padding-bottom: 2.718rem;
 `;
 
 export const RightSideHome = styled(RightSide)`
   color: #000;
-  border-left: 5px solid rgba(0, 0, 0, 0.5);
-  padding-left: 70px;
-  margin-left: 20px;
+  border-left: .368rem solid rgba(0, 0, 0, 0.5);
+  padding-left: 2.718rem;
+  margin-left: 1rem;
   position: relative;
 
   ${media.phoneM`
@@ -40,29 +39,29 @@ export const RightSideHome = styled(RightSide)`
 `;
 
 export const Section = styled.section`
-  margin-bottom: 80px;
+  margin-bottom: 7.389rem;
   overflow-wrap: anywhere;
 `;
 
 export const SectionTitle = styled.h3`
-  font-size: 35px;
+  font-size: 2.718rem;
   font-weight: 100;
   margin: 0 0 10px 0;
   color: #000;
   font-weight: 300;
-  padding-bottom: 5px;
+  padding-bottom: .368rem;
   position: relative;
   &:before {
     content: "";
-    width: 25px;
-    height: 25px;
+    width: 1rem;
+    height: 1rem;
     border-radius: 100%;
     color: #000;
     background-color: #fff;
     position: absolute;
-    left: -90px;
-    top: 7px;
-    border: 5px solid #CB4B16;
+    left: -3.718rem;
+    top: .368rem;
+    border: .368rem solid #CB4B16;
 
     ${media.phoneM`
         left: -45px;
@@ -78,11 +77,11 @@ export const SectionTitle = styled.h3`
 `;
 
 export const ListItem = styled.li`
-  font-size: 18px;
+  font-size: 1rem;
   list-style-type: none;
-  margin: 10px 0;
+  margin: .368rem 0;
   font-weight: 100;
-  line-height: 30px;
+  line-height: 2.718rem;
 `;
 
 export const UnorderedList = styled.ul`
@@ -110,10 +109,10 @@ export const ShowMoreButton = styled.button`
   border-radius: 3px;
   color: #000;
   font-weight: 100;
-  padding: 10px 15px;
-  font-size: 15px;
+  padding: .368rem .368rem;
+  font-size: 1rem;
   border: 1px solid rgba(0, 0, 0, 0.69);
-  margin-top: 5px;
+  margin-top: .368rem;
 
   &:hover {
     background-color: rgba(0, 0, 0, 0.3);

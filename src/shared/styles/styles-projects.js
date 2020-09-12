@@ -3,29 +3,29 @@ import { media } from "../../utils/responsive-utils";
 import { ListItem, UnderlinedLink } from "./styled-components";
 
 export const Wrapper = styled(ListItem)`
-  margin: 35px 0;
+  margin: 2.718rem 0;
 `;
 
 export const Link = styled(UnderlinedLink)`
-  margin-bottom: 10px;
-  padding-bottom: 5px;
+  margin-bottom: .472rm;
+  padding-bottom: .368rem;
   display: inline-block;
 `;
 
 export const Points = styled.div`
-  margin-bottom: 40px;
-  line-height: 50px;
+  margin-bottom: 2.718rem;
+  line-height: 3.490rem;
 `;
 
 export const Title = styled.div`
-  font-size: 30px;
+  font-size: 2.718rem;
   font-weight: 300;
   position: relative;
 
   &:before {
     content: "";
-    width: 25px;
-    height: 25px;
+    width: 2.718rem;
+    height: 2.718rem;
     border-radius: 100%;
     color: white;
     background-color: #66dbff;
@@ -35,21 +35,21 @@ export const Title = styled.div`
     border: 5px solid #CB4B16;
 
     ${media.phoneM`
-        left: -45px;
+        left: -4.482rem;
       `};
   }
 
   ${media.phoneM`
-       font-size: 22px;
+       font-size: 1.649rem;
     `};
 `;
 
 export const Point = styled.p`
   position: relative;
   padding: 0;
-  margin: 15px 0;
-  line-height: 25px;
-  margin-bottom: 15px;
+  margin: .368rem 0;
+  line-height: 1.649rem;
+  margin-bottom: 1rem;
 
   &:before {
     content: "";

@@ -53,11 +53,11 @@ h2 a:hover {
 }
 
 .headerH1 {
-  margin: 10px;
+  margin: 0.607rem;
 }
 
 @media (max-width: 440px) {
   .footer {
-    font-size: 10px;
+    font-size: .778rem;
   }
 }

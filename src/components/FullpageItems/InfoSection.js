@@ -55,7 +55,7 @@ const InfoSection = ({ title, info, features, className, button, index, randomAr
         z-index: 100;
         position: relative;
         padding: 1rem;
-        border-radius: .368rem;
+        border-radius: 1rem;
         backdrop-filter: saturate(180%) blur(1rem);
         box-shadow: 0 0.223rem 0.368rem rgba(0,0,0,.368);
         width: 78%;
@@ -63,7 +63,7 @@ const InfoSection = ({ title, info, features, className, button, index, randomAr
       }
       @media only screen and (min-width: 600px) {
         .paper-transparent {
-          width: 60.7%;
+          width: 47.237%;
           padding: 2.718rem;
         }
       }
